@@ -7,9 +7,9 @@
 
 /* Body and general layout */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Google Sans', sans-serif;
   background-color: #f4f4f4;
-  color: #333;
+  color: #202124;
   line-height: 1.6;
 }
 
@@ -22,11 +22,12 @@ header {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 header nav ul {
@@ -42,6 +43,8 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }
 
 header nav ul li a:hover {
@@ -58,9 +61,20 @@ main {
   margin-bottom: 30px;
 }
 
+.intro h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #5f6368;
+}
+
 .features {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
 }
 
 .feature-box {
@@ -70,11 +84,22 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 30%;
   text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .feature-box h4 {
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 500;
   margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #5f6368;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
 }
 
 /* Footer */
